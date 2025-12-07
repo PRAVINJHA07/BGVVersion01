@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-07T12:44:02 IST" name="Suite" finished-at="2025-12-07T12:45:16 IST" duration-ms="74456">
+    <groups>
+    </groups>
+    <test started-at="2025-12-07T12:44:02 IST" name="Test1" finished-at="2025-12-07T12:45:16 IST" duration-ms="74456">
+      <class name="scripts.CreateUser">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:scripts.CreateUser@49e53c76]" started-at="2025-12-07T12:44:02 IST" name="openApp" finished-at="2025-12-07T12:44:11 IST" duration-ms="9304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc4()[pri:4, instance:scripts.CreateUser@49e53c76]" started-at="2025-12-07T12:44:11 IST" name="tc4" finished-at="2025-12-07T12:45:14 IST" duration-ms="63381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.CreateUser@49e53c76]" started-at="2025-12-07T12:45:14 IST" name="closeApp" finished-at="2025-12-07T12:45:16 IST" duration-ms="1734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc4 status=SUCCESS method=CreateUser.tc4()[pri:4, instance:scripts.CreateUser@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.CreateUser -->
+      <class name="scripts.CreateCountryFilter">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:scripts.CreateCountryFilter@37afeb11]" started-at="2025-12-07T12:44:02 IST" name="openApp" finished-at="2025-12-07T12:44:07 IST" duration-ms="5485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc1()[pri:1, instance:scripts.CreateCountryFilter@37afeb11]" started-at="2025-12-07T12:44:07 IST" name="tc1" finished-at="2025-12-07T12:44:23 IST" duration-ms="16284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.CreateCountryFilter@37afeb11]" started-at="2025-12-07T12:44:23 IST" name="closeApp" finished-at="2025-12-07T12:44:25 IST" duration-ms="2041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc1 status=SUCCESS method=CreateCountryFilter.tc1()[pri:1, instance:scripts.CreateCountryFilter@37afeb11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.CreateCountryFilter -->
+      <class name="scripts.CreateCityFilter">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:scripts.CreateCityFilter@38d8f54a]" started-at="2025-12-07T12:44:02 IST" name="openApp" finished-at="2025-12-07T12:44:10 IST" duration-ms="8567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc2()[pri:3, instance:scripts.CreateCityFilter@38d8f54a]" started-at="2025-12-07T12:44:10 IST" name="tc2" finished-at="2025-12-07T12:44:25 IST" duration-ms="15164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.CreateCityFilter@38d8f54a]" started-at="2025-12-07T12:44:25 IST" name="closeApp" finished-at="2025-12-07T12:44:27 IST" duration-ms="1942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=CreateCityFilter.tc2()[pri:3, instance:scripts.CreateCityFilter@38d8f54a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.CreateCityFilter -->
+      <class name="scripts.CreateStateFilter">
+        <test-method is-config="true" signature="openApp(java.lang.String)[pri:0, instance:scripts.CreateStateFilter@409bf450]" started-at="2025-12-07T12:44:02 IST" name="openApp" finished-at="2025-12-07T12:44:09 IST" duration-ms="7438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc2()[pri:2, instance:scripts.CreateStateFilter@409bf450]" started-at="2025-12-07T12:44:09 IST" name="tc2" finished-at="2025-12-07T12:44:24 IST" duration-ms="14580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:scripts.CreateStateFilter@409bf450]" started-at="2025-12-07T12:44:24 IST" name="closeApp" finished-at="2025-12-07T12:44:26 IST" duration-ms="1945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=CreateStateFilter.tc2()[pri:2, instance:scripts.CreateStateFilter@409bf450] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.CreateStateFilter -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
