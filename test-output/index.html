@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="scripts.CreateUser" class="method navigator-link" hash-for-method="tc4">tc4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="scripts.DOB" class="method navigator-link" hash-for-method="cal">cal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="scripts.CreateCountryFilter" class="method navigator-link" hash-for-method="tc1">tc1</a> <!-- method navigator-link -->
@@ -130,6 +121,11 @@
                         <a href="#" panel-name="suite-Suite" title="scripts.CreateStateFilter" class="method navigator-link" hash-for-method="tc2">tc2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="scripts.CreateUser" class="method navigator-link" hash-for-method="tc4">tc4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -142,9 +138,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">scripts.DOB</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cal">
+                  </a> <!-- cal -->
+                  <span class="method-name">cal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">scripts.CreateUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -153,48 +164,6 @@
                   <a name="tc4">
                   </a> <!-- tc4 -->
                   <span class="method-name">tc4</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2d358f6f6c3be68332a8fd3f6009b9, clickElement {id=f.2402E25D9538DF24625CCEAE56E32DF7.d.B67F79C85C358FB382A8D2604A981306.e.202}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\chand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59477}, goog:processID: 16988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59477/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bf2d358f6f6c3be68332a8fd3f6009b9)] -&gt; xpath: //span[@class=&quot;arrowDown&quot;]]
-Session ID: bf2d358f6f6c3be68332a8fd3f6009b9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at liabraies.WebDriverutilites.calendar(WebDriverutilites.java:25)
-	at scripts.CreateUser.tc4(CreateUser.java:45)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">scripts.CreateCountryFilter</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc1">
-                  </a> <!-- tc1 -->
-                  <span class="method-name">tc1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,6 +179,21 @@ Session ID: bf2d358f6f6c3be68332a8fd3f6009b9
                   <a name="tc2">
                   </a> <!-- tc2 -->
                   <span class="method-name">tc2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts.CreateCountryFilter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc1">
+                  </a> <!-- tc1 -->
+                  <span class="method-name">tc1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,14 +222,16 @@ Session ID: bf2d358f6f6c3be68332a8fd3f6009b9
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test1&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;scripts.CreateCountryFilter&quot;/&gt;
       &lt;class name=&quot;scripts.CreateStateFilter&quot;/&gt;
       &lt;class name=&quot;scripts.CreateCityFilter&quot;/&gt;
       &lt;class name=&quot;scripts.CreateUser&quot;/&gt;
+      &lt;class name=&quot;scripts.DOB&quot;/&gt;
+      &lt;class name=&quot;scripts.OpenFlipkartApplication&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -259,7 +245,7 @@ Session ID: bf2d358f6f6c3be68332a8fd3f6009b9
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (4 classes)</span>
+                <span class="test-name">Test1 (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,28 +271,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc4')
 data.setCell(0, 2, 'scripts.CreateUser')
-data.setCell(0, 3, 23995);
+data.setCell(0, 3, 61128);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc2')
-data.setCell(1, 2, 'scripts.CreateCityFilter')
-data.setCell(1, 3, 17656);
+data.setCell(1, 1, 'cal')
+data.setCell(1, 2, 'scripts.DOB')
+data.setCell(1, 3, 23879);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'tc1')
 data.setCell(2, 2, 'scripts.CreateCountryFilter')
-data.setCell(2, 3, 16051);
+data.setCell(2, 3, 16146);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'tc2')
-data.setCell(3, 2, 'scripts.CreateStateFilter')
-data.setCell(3, 3, 12350);
+data.setCell(3, 2, 'scripts.CreateCityFilter')
+data.setCell(3, 3, 13181);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc2')
+data.setCell(4, 2, 'scripts.CreateStateFilter')
+data.setCell(4, 3, 12941);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -337,75 +327,73 @@ return data;
                 <span class="method-name">openApp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tc4</span>
-                <span class="method-start">9327 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">tc2</span>
-                <span class="method-start">10169 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateStateFilter.tc2()[pri:2, instance:scripts.CreateSta...)</span>
-                <span class="method-start">22522 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc4 status=FAILURE method=CreateUser.tc4()[pri:4, instance:scripts.CreateUser@279fe...)</span>
-                <span class="method-start">33324 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateCountryFilter</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">tc1</span>
-                <span class="method-start">3323636 ms</span>
+                <span class="method-start">11758 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=tc1 status=SUCCESS method=CreateCountryFilter.tc1()[pri:1, instance:scripts.CreateC...)</span>
-                <span class="method-start">3339689 ms</span>
+                <span class="method-start">27909 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">29672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc2</span>
+                <span class="method-start">43862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateStateFilter.tc2()[pri:2, instance:scripts.CreateSta...)</span>
+                <span class="method-start">56807 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">58628 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">tc2</span>
-                <span class="method-start">4581102 ms</span>
+                <span class="method-start">68205 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateCityFilter.tc2()[pri:3, instance:scripts.CreateCity...)</span>
-                <span class="method-start">4598762 ms</span>
+                <span class="method-start">81388 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">83220 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc4</span>
+                <span class="method-start">92909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc4 status=SUCCESS method=CreateUser.tc4()[pri:4, instance:scripts.CreateUser@2a5c8...)</span>
+                <span class="method-start">154043 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.DOB</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">155827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cal</span>
+                <span class="method-start">171023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=cal status=SUCCESS method=DOB.cal()[pri:0, instance:scripts.DOB@752325ad] output={n...)</span>
+                <span class="method-start">194905 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
