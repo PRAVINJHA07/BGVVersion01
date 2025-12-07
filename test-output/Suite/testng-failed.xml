@@ -4,13 +4,13 @@
   <test thread-count="5" parallel="classes" name="Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="scripts.CreateCountryFilter">
+      <class name="scripts.CreateUser">
         <methods>
           <include name="closeApp"/>
-          <include name="tc1"/>
           <include name="openApp"/>
+          <include name="tc4"/>
         </methods>
-      </class> <!-- scripts.CreateCountryFilter -->
+      </class> <!-- scripts.CreateUser -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
