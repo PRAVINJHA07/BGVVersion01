@@ -8,6 +8,7 @@
       <class name="scripts.CreateStateFilter"/>
       <class name="scripts.CreateCityFilter"/>
       <class name="scripts.CreateUser"/>
+      <class name="scripts.DOB"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
