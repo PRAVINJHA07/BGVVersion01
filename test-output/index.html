@@ -222,8 +222,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;scripts.CreateCountryFilter&quot;/&gt;
@@ -275,23 +275,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc4')
 data.setCell(0, 2, 'scripts.CreateUser')
-data.setCell(0, 3, 61128);
+data.setCell(0, 3, 65343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'cal')
 data.setCell(1, 2, 'scripts.DOB')
-data.setCell(1, 3, 23879);
+data.setCell(1, 3, 27469);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'tc1')
 data.setCell(2, 2, 'scripts.CreateCountryFilter')
-data.setCell(2, 3, 16146);
+data.setCell(2, 3, 16165);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'tc2')
 data.setCell(3, 2, 'scripts.CreateCityFilter')
-data.setCell(3, 3, 13181);
+data.setCell(3, 3, 15127);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'tc2')
 data.setCell(4, 2, 'scripts.CreateStateFilter')
-data.setCell(4, 3, 12941);
+data.setCell(4, 3, 15083);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -327,73 +327,100 @@ return data;
                 <span class="method-name">openApp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc1</span>
-                <span class="method-start">11758 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc1 status=SUCCESS method=CreateCountryFilter.tc1()[pri:1, instance:scripts.CreateC...)</span>
-                <span class="method-start">27909 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">29672 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc2</span>
-                <span class="method-start">43862 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateStateFilter.tc2()[pri:2, instance:scripts.CreateSta...)</span>
-                <span class="method-start">56807 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">58628 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc2</span>
-                <span class="method-start">68205 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateCityFilter.tc2()[pri:3, instance:scripts.CreateCity...)</span>
-                <span class="method-start">81388 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">83220 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc4</span>
-                <span class="method-start">92909 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=tc4 status=SUCCESS method=CreateUser.tc4()[pri:4, instance:scripts.CreateUser@2a5c8...)</span>
-                <span class="method-start">154043 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts.DOB</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">155827 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc4</span>
+                <span class="method-start">15656 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.DOB</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cal</span>
-                <span class="method-start">171023 ms</span>
+                <span class="method-start">16971 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc2</span>
+                <span class="method-start">19398 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc2</span>
+                <span class="method-start">19777 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateStateFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateStateFilter.tc2()[pri:2, instance:scripts.CreateSta...)</span>
+                <span class="method-start">34496 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateCityFilter</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc2 status=SUCCESS method=CreateCityFilter.tc2()[pri:3, instance:scripts.CreateCity...)</span>
+                <span class="method-start">34906 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.DOB</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=cal status=SUCCESS method=DOB.cal()[pri:0, instance:scripts.DOB@752325ad] output={n...)</span>
-                <span class="method-start">194905 ms</span>
+                <span class="method-start">44445 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc4 status=SUCCESS method=CreateUser.tc4()[pri:4, instance:scripts.CreateUser@2a5c8...)</span>
+                <span class="method-start">81002 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts.CreateCountryFilter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc1</span>
+                <span class="method-start">8552736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=tc1 status=SUCCESS method=CreateCountryFilter.tc1()[pri:1, instance:scripts.CreateC...)</span>
+                <span class="method-start">8568906 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
